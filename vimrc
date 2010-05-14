@@ -36,3 +36,7 @@ augroup haskell
     au BufNewFile,BufRead *.hs setl sw=4 sts=4 expandtab
 augroup END
 
+augroup php
+    au BufNewFile,BufRead *.php setl sw=4 sts=4 expandtab
+augroup END
+
