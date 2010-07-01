@@ -40,3 +40,7 @@ augroup php
     au BufNewFile,BufRead *.php setl sw=4 sts=4 expandtab
 augroup END
 
+augroup html
+    au BufNewFile,BufRead *.html setl sw=4 sts=4 expandtab
+augroup END
+
