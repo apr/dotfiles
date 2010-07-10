@@ -44,3 +44,7 @@ augroup html
     au BufNewFile,BufRead *.html setl sw=4 sts=4 expandtab
 augroup END
 
+augroup ml
+    au BufNewFile,BufRead *.ml setl sw=4 sts=4 expandtab
+augroup END
+
