@@ -8,6 +8,14 @@ if has("gui_running")
     syntax on
 endif
 
+filetype indent on
+
+set nohlsearch
+set noautoindent
+set nocindent
+
+colorscheme delek
+
 " Always show statusline.
 set laststatus=2
 
@@ -44,7 +52,15 @@ augroup html
     au BufNewFile,BufRead *.html setl sw=4 sts=4 expandtab
 augroup END
 
+augroup xml
+    au BufNewFile,BufRead *.xml setl sw=4 sts=4 expandtab
+augroup END
+
 augroup ml
     au BufNewFile,BufRead *.ml setl sw=4 sts=4 expandtab
+augroup END
+
+augroup java
+    au BufNewFile,BufRead *.java setl sw=4 sts=4 expandtab
 augroup END
 
