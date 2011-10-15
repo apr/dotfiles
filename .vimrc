@@ -14,7 +14,7 @@ set nohlsearch
 set noautoindent
 set nocindent
 
-colorscheme delek
+set t_Co=256
 
 " Always show statusline.
 set laststatus=2
