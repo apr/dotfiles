@@ -14,7 +14,9 @@ set nohlsearch
 set noautoindent
 set nocindent
 
-set t_Co=256
+if &term ==? "xterm"
+    set t_Co=256
+endif
 
 " Always show statusline.
 set laststatus=2
