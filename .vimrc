@@ -1,6 +1,8 @@
 
 set backspace=2
 
+set modeline
+
 if has("gui_running")
     set lines=55 columns=80
     set guioptions=-m
