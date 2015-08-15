@@ -12,11 +12,11 @@ if has("gui_running")
     syntax on
 endif
 
-filetype indent on
+filetype plugin indent on
 
 set nohlsearch
-set noautoindent
-set nocindent
+"set nocindent
+"set noautoindent
 
 if &term ==? "xterm"
     set t_Co=256
@@ -36,10 +36,12 @@ let &stl="%f %y%([%R%M]%)%=#%n %l/%L,%c%V "
 
 augroup vimrc
     au BufNewFile,BufRead .vimrc setl sw=4 sts=4 expandtab
+    au FileType vim setl indentexpr=
 augroup END
 
 augroup cpp
     au BufNewFile,BufRead *.h,*.cc setl sw=4 sts=4 expandtab
+    au FileType cpp setl nocindent
 augroup END
 
 augroup python
@@ -68,5 +70,10 @@ augroup END
 
 augroup java
     au BufNewFile,BufRead *.java setl sw=4 sts=4 expandtab
+    au FileType java setl nocindent indentexpr=
+augroup END
+
+augroup scheme
+    au FileType scheme setl sw=2 sts=2 expandtab
 augroup END
 
